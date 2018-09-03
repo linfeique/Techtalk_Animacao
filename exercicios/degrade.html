@@ -5,6 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .degrade{
+            width: 400px;
+            height: 200px;
+            animation: degrade 10s infinite;
+        }
+
+        @keyframes degrade{
+            0%{
+                background-color: red;
+            }
+
+            20%{
+                background-color: orange;
+            }
+
+            35%{
+                background-color: yellow;
+            }
+
+            45%{
+                background-color: green;
+            }
+
+            55%{
+                background-color: blue;
+            }
+
+            70%{
+                background-color: indigo;
+            }
+
+            100%{
+                background-color: violet;
+            }
+
+        }
+    </style>
 </head>
 <body>
     <div class="degrade">
