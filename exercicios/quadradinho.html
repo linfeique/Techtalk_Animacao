@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            outline: none;
+        }
+
+        body {
+            background-color: blueviolet;
+        }
+
+        .tudo_dentro {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+            margin: auto;
+            width: 40px;
+            padding-left: 176px;
+            transition: width .2s, padding .2s;
+            margin-top: 25vh;
+        }
+
+        .tudo_dentro:hover {
+            width: 400px;
+            padding-left: 0;
+        }
+
+        .edicao {
+            height: 100vh;
+            width: 100vw;
+            position: fixed;
+            z-index: 999;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #fundoIntro {
+            background-color: blueviolet;
+            animation: intro 3s linear forwards;
+        }
+
+        .inputs input{
+            height: 32px;
+            border-radius: 15px;
+            margin-top: 7px;
+            margin-left: 15px; 
+        }
+
+        @keyframes intro {
+            0% {
+                transform: scale(1);
+            }
+
+            25%{
+                transform: scale(1.2) rotate(30deg);
+            }
+
+            57% {
+                transform: scale(1.2) rotate(-30deg);
+            }
+
+            80% {
+                transform : scale(1);
+            }
+
+            100% {
+                transform: scale(0);    
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tudo_dentro">
+        <div>
+            <img src="fallout.png" alt="#" width="200px" height="200px">
+        </div>
+        <div class="inputs">
+            <input type="text" placeholder="Digite seu nome">
+            <br>
+            <input type="password" placeholder="Digite sua senha">
+        </div>
+    </div>
+
+    <div class="edicao" id="fundoIntro">
+        <img src="intro.png">
+    </div>
+</body>
+
+</html>
